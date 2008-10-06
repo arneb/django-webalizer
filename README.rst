@@ -21,5 +21,5 @@ your url-conf (before the include admin.site.root entry):
 
     url(r'^admin/webalizer/', include('webalizer.urls')),
 
-_`django-webalizer` : http://github.com/arneb/django-webalizer/
-_`Webalizer` : http://www.webalizer.org/
+.. _`django-webalizer` : http://github.com/arneb/django-webalizer/
+.. _`Webalizer` : http://www.webalizer.org/
