@@ -1,0 +1,11 @@
+{% extends "webalizer/base.html" %}
+{% load i18n %}
+
+ 
+{% block content %} 
+{% if not data %}
+{% trans "settings.WEBALIZER_DIR is not configured" %}
+{% else %}
+{{ data|safe }}
+{% endif %}    
+{% endblock %} 
