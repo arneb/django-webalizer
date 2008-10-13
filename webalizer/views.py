@@ -21,10 +21,10 @@ def proxy(request, path):
     
     """
     context = {'title': 'Webalizer'}
-    if path is None or path is u'': 
+    if path is None or path is u'':
         path = 'index.html'
     if webalizer_dir is not None:
-        if path.endswith('.png'):
+        if path.endswith('.png'): # webalizer generates png images
             return serve(request, path, document_root=webalizer_dir)
         else:
             try:
